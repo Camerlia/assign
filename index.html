@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
     <header>Nav bar</header>
     <main>
@@ -20,18 +23,28 @@
                 <li>Earth's days are getting longer</li>
             </ul>
         </div>
-        <form>
-            <label>Name</label>
-            <input placeholder="Name" type="text" />
-            <label>Email</label>
-            <input placeholder="Input Email Address" type="email" />
-            <label>Message</label>
-            <input placeholder="Message" type="text" />
-            <button>Register</button>
+        <form method="get" action="result.html">
+            <div style="display: flex; gap: 1rem;">
+                <label for="name">Name</label>
+                <input placeholder="Name" name="name" type="text" required />
+            </div>
+            <div style="display: flex; gap: 1rem;">
+                <label for="email">Email</label>
+                <input placeholder="Input Email Address" name="email" type="email" required/>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+                <label for="messgae">Message</label>
+                <input placeholder="Message" name="message" type="text" required/>
+            </div>
+
+
+            <button type="submit">Register</button>
         </form>
         <a href="/index1.html">Link to 1</a>
         <a href="/index2.html">Link to 2</a>
     </main>
     <footer>Camelia 2025</footer>
 </body>
+
 </html>
+<!-- so i am just using the same file and updating it, or am i suppose to create a repo for each week?  -->

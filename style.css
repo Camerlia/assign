@@ -1,0 +1,9 @@
+body{
+    background-color: azure;
+    text-align: left;
+    padding: 2rem;
+}
+li{
+    list-style-type: none;
+    padding: 1px;
+}
