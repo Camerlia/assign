@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.hero-wrap div {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1em;
+    padding: 0 15px; 
+}
+
+
+.img-wrap img {
+    max-width: 100%; 
+    height: auto; 
+    margin: auto;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 15px; 
+}
+
+
+@media (min-width: 768px) {
+
+    .img-wrap img {
+        max-width: 500px;
+        height: auto;
+    }
+}
