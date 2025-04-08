@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    background-color: #dedede;
+}
+h1{
+    color: blue;
+}
+.contain{
+    max-width: 1200px;
+    margin: 40px auto ;
+
+}

@@ -1,0 +1,82 @@
+:root {
+    --color-1: #F8F3D9;
+    --color-2: #EBE5C2;
+    --color-3: #B9B28A;
+    --color-4: #504B38;
+}
+
+body {
+    background-image: linear-gradient(to left, var(--color-2), var(--color-3), var(--color-4)); 
+    color: var(--color-1);
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+p {
+    margin: 0;
+}
+h1{
+    font-size: 2.5rem;
+    color: var(--color-4);
+    border-left: 4px var(--color-4, brown) solid ;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form input,
+button {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--color-1);
+}
+button{
+    background-color: var(--color-4);
+    color: var(--color-2);
+    font-size: 1rem;
+    max-width: 150px;
+}
+
+form input::placeholder {
+    text-align: left;
+}
+
+form input:focus {
+    border: 2px black solid;
+}
+
+.section1 {
+    max-width: 1200px;
+    padding: 60px 20px 10px 20px;
+    margin: auto;
+}
+
+.form-contain {
+    width: 20vw;
+    margin: auto;
+    border-radius: 2rem;
+    background-color: var(--color-1);
+    height: 50vh;
+    padding: 20px 15px 20px 15px;
+}
+
+
+
+
+@media (min-width: 200px) and (max-width: 768px) {
+    .form-contain {
+        width: 50vw;
+        
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+}
+
+button:hover {
+    background-color: var(--color-3);
+}

@@ -1,0 +1,53 @@
+:root {
+    --color-1: #F1EFEC;
+    --color-2: #D4C9BE;
+    --color-3: #123458;
+    --color-4: #030303;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-2);
+    text-align: center;
+    color: var(--color-3);
+}
+
+section {
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.grid-wrap {
+    max-width: 700px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.grid-1{
+background-color: var(--color-1);
+padding: 20px;
+border-radius: 10px;
+}
+.img-contain{
+width: 100px;
+height: 100px;
+border-radius: 999px;
+}
+
+@media (min-width: 100px) and (max-width: 576px) {
+    h1{
+        font-size: 1.8rem;
+    }
+    .grid-wrap {
+        max-width: 700px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,145 @@
+:root {
+    --color-1: #4E1F00;
+    --color-2: #74512D;
+    --color-3: #FEBA17;
+    --color-4: #F8F4E1;
+
+}
+
+body {
+    background-color: #dedede;
+    margin: 0;
+    color: var(--color-4);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-4);
+}
+
+a:hover {
+    color: #FEBA17;
+}
+
+footer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+section {
+    padding: 0 2rem 0 2rem;
+    background-color: #4E1F00;
+
+}
+
+h3 {
+    width: 40px;
+    padding-bottom: 2px;
+    border-bottom: 1px var(--color-3) solid;
+}
+
+.contains {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.logo-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px var(--color-4) dotted;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.flex-img {
+    display: flex;
+    gap: .7rem;
+}
+
+.footer-grid-wrap {
+    min-height: 10vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 1rem;
+    padding: 20px 0;
+}
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.list-form {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+
+
+}
+
+.list-form button,
+input {
+    padding: .4rem;
+}
+
+.list-form button {
+    background-color: var(--color-3);
+
+}
+
+.flex-img img {
+    color: var(--color-3);
+}
+
+/* @media (min-width: 993px) and (max-width: 1400px) {
+
+} */
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px var(--color-4) dotted;
+
+}
+
+@media (min-width: 150px) and (max-width: 576px) {
+
+
+    .logo-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        border-top: 1px var(--color-4) dotted;
+    }
+
+    .list-form button,
+    input {
+        padding: 0;
+    }
+
+    .footer-grid-wrap {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+}

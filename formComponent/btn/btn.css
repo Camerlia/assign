@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000307;
+}
+
+.shadow-button {
+    background-color: #000307; 
+    color: white;
+    padding: 10px 20px;
+    border: 2px rgba(238, 230, 6, 0.3) solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 8px 8px 8px rgba(238, 230, 6, 0.3); 
+  }
+
+  
